@@ -290,6 +290,10 @@ h3{
 .features_links span{
   text-transform: capitalize;
   display: block;
+  font-weight: bolder;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-top: 5px;
 }
 
 .massage,.hair_style,
