@@ -222,11 +222,11 @@ h3{
   color:#f33838;
 }
 
-.about li p{
+.about li p,.features p{
   font-size: 10px;
   color: #7c7c7c;
   margin-top: 10px;
-  line-height: 15px;
+  line-height: 16px;
 }
 
 .about li a{
@@ -245,7 +245,88 @@ h3{
  /*=================================
   about section styling ends here
 =================================*/ 
+/*=================================
+  features section styling starts here
+=================================*/ 
+.features .wrapper{
+  display: flex;
+  padding-bottom: 2%;
+}
+.features_content{
+  padding-top: 2%;
+  margin-left: 17%;
+  width: 56%;
+  letter-spacing: 1px;
+}
+.features h3{
+  text-transform: capitalize;
+}
 
+.features p{
+  font-size: 10px;
+  color: #7c7c7c;
+  margin: 15px 0;
+  line-height: 16px;
+  width: 89%;
+}
+
+.features_links{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.features_links li{
+  border: 1px solid #ccc7c7;
+  padding: 23px 12px;
+  text-align: center;
+  width: 37%;
+}
+
+.features_links li a{
+  font-size: 30px;
+}
+
+.features_links span{
+  text-transform: capitalize;
+  display: block;
+}
+
+.massage,.hair_style,
+.facial_style,.eyebrows{
+  text-indent: -9999px;
+}
+.massage::before{
+  content: '\f118';
+  font-family: FontAwesome;
+  text-indent: 0;
+  float: right;
+  color: #6e5ee7;
+}
+.hair_style::before{
+  content: '\f182';
+  font-family: FontAwesome;
+  text-indent: 0;
+  float: right;
+  color: #6e5ee7;
+}
+.facial_style::before{
+  content: '\f004';
+  font-family: FontAwesome;
+  text-indent: 0;
+  float: right;
+  color: #6e5ee7;
+}
+.eyebrows::before{
+  content: '\f06e';
+  font-family: FontAwesome;
+  text-indent: 0;
+  float: right;
+  color: #6e5ee7;
+}
+ /*=================================
+  features section styling ends here
+=================================*/ 
 
 
 
