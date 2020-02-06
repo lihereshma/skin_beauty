@@ -277,7 +277,7 @@ h3{
 }
 
 .features_links li{
-  border: 1px solid #ccc7c7;
+  border: 1px solid #e2dede;
   padding: 23px 12px;
   text-align: center;
   width: 37%;
@@ -330,6 +330,19 @@ h3{
 }
  /*=================================
   features section styling ends here
+=================================*/ 
+/*=================================
+  users section styling starts here
+=================================*/ 
+
+
+
+
+
+
+
+ /*=================================
+  users section styling ends here
 =================================*/ 
 
 
