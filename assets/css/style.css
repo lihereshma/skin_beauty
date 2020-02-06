@@ -106,12 +106,29 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+.menu_list{ display: none;}
+nav li:not(:last-child){  margin-right: 30px;}
+h1,nav{ margin-top: 10px;}
 
+header .wrapper{
+  width: 93%;
+  display: flex;
+  justify-content: space-between;
+}
 
+nav li a{
+  text-transform: capitalize;
+  font-size: 9px;
+  letter-spacing: 1px;
+  /* padding: 3px 6px;
+  border: 1px solid; */
+}
 
-
-
-
+.menu::after{
+  content: '\f107';
+  font-family: FontAwesome;
+  padding: 2px;
+}
 /*=================================
   Header styling ends here
 =================================*/  
