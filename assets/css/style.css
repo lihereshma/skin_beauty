@@ -184,14 +184,19 @@ h2{
 /*=================================
   about section styling starts here
 =================================*/ 
+.about li img{  margin-bottom: 10px;  }
+
 .about{
   text-align: center;
-  /* padding: 10%; */
+  padding: 3.5% 0;
+  background-color: #d0dcbd;
 }
+
 h3{
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bolder;
 }
+
 .heading{
   font-size: 10px;
   letter-spacing: 1px;
@@ -200,6 +205,15 @@ h3{
 
 .about ul{
   display: flex;
+  justify-content: space-between;
+}
+
+.about li{
+  background-color: #fff;
+  width: 48%;
+  box-sizing: border-box;
+  padding: 3%;
+  margin-top: 6%;
 }
 
 .about li span{
@@ -207,14 +221,27 @@ h3{
   text-transform: capitalize;
   color:#f33838;
 }
+
 .about li p{
   font-size: 10px;
   color: #7c7c7c;
-}
-.about li a{
-  color: #6e5ee7;
+  margin-top: 10px;
+  line-height: 15px;
 }
 
+.about li a{
+  color: #6e5ee7;
+  text-transform: capitalize;
+  font-size: 9px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+.about li a::before{
+  content: '\f0a4';
+  font-family: FontAwesome;
+  padding-right: 10px;
+}
  /*=================================
   about section styling ends here
 =================================*/ 
