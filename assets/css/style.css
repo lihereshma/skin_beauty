@@ -397,13 +397,90 @@ h3{
 /*=================================
   footer styling starts here
 =================================*/ 
+footer{
+  background-color: #1f1f1f;
+  color: #fff;
+}
+footer .wrapper{
+  display: flex;
+  padding: 3% 0;
+}
 
+h5{
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 22px;
+}
+h6{
+  text-transform: capitalize;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  margin-bottom: 22px;
+}
 
+a,.footer_block p{
+  color: #7c7c7c;
+  font-size: 10px;
+}
+.footer_block p{
+  line-height: 18px;
+  margin-top: 13px;
+  width: 90%;
+}
 
+.articles li::before{
+  content: '\f105';
+  font-family: FontAwesome;
+  margin-right: 10px;
+  font-size: 10px;
+}
 
+.posts ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
+.posts{ width: 60%; }
 
+.posts li:first-child,.posts li:nth-child(2),
+.posts li:nth-child(3){
+  margin-bottom:2px;
+}
 
+.address{
+  margin-left: 2%;
+}
+
+.location::before{
+  content: '\f041';
+  font-family: FontAwesome;
+  margin-right: 10px;
+  font-size: 10px;
+  color: #fff;
+}
+.email::before{
+  content: '\f0e0';
+  font-family: FontAwesome;
+  margin-right: 10px;
+  font-size: 10px;
+  color: #fff;
+}
+.number::before{
+  content: '\f879';
+  font-family: FontAwesome;
+  margin-right: 5px;
+  font-size: 10px;
+  color: #fff;
+}
+.time::before{
+  content: '\f017';
+  font-family: FontAwesome;
+  margin-right: 10px;
+  font-size: 10px;
+  color: #fff;
+}
  /*=================================
   footer styling ends here
 =================================*/ 
