@@ -282,9 +282,13 @@ h3{
   text-align: center;
   width: 37%;
 }
-
 .features_links li a{
   font-size: 30px;
+}
+
+.features_links li:first-child,
+.features_links li:nth-child(2){
+  margin-bottom: 15px;
 }
 
 .features_links span{
@@ -334,13 +338,55 @@ h3{
 /*=================================
   users section styling starts here
 =================================*/ 
-
-
-
-
-
-
-
+.users .wrapper{  width: 100%;}
+.users .wrapper ul{ display: flex;  }
+.users span{ display: block;}
+.users ul li:last-child{
+  box-sizing: border-box;
+  background-color: #f34142;
+  text-align: center;
+  padding: 31px 0px;
+  color: #fff;
+}
+.users span:first-child{
+  color: #1f1f1f;
+  font-size: 13px;
+  font-weight: bold;
+}
+.users span:nth-child(2){
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+.users a{
+  text-indent: -9999px;
+  display: inline-block;
+}
+.users a::before{
+  content: '\f007';
+  font-family: FontAwesome;
+  text-indent: 0;
+  float: right;
+  color: #000;
+  padding: 7px 10px;
+  background-color: #fff;
+  border-radius: 100%;
+  margin-top: 20px;
+}
+.users span:nth-child(4){
+  text-transform: capitalize;
+  font-weight: bolder;
+  font-size: 14px;
+  margin: 10px 0;
+}
+.users p{
+  font-size: 10px;
+  letter-spacing: 1px;
+  line-height: 16px;
+  width: 55%;
+  margin-left: 26%;
+}
  /*=================================
   users section styling ends here
 =================================*/ 
