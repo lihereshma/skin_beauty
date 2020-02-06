@@ -100,7 +100,7 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 58%; 
   margin: 0 auto;
 }
 /*=================================
@@ -118,7 +118,7 @@ header .wrapper{
 
 nav li a{
   text-transform: capitalize;
-  font-size: 9px;
+  font-size: 10px;
   letter-spacing: 1px;
   /* padding: 3px 6px;
   border: 1px solid; */
@@ -139,18 +139,85 @@ nav li a{
 /*=================================
   banner section styling starts here
 =================================*/
+.banner_content li:last-child{  display: none;  }
 
+.banner_content{
+  display: flex;
+  justify-content: space-between;
+}
+.banner_content span{
+  font-size: small;
+  letter-spacing: 2px;
+}
 
-
-
-
-
-
-
+h2{
+  text-transform: capitalize;
+  font-size: 42px;
+  font-size: wei;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+.red_button{
+  text-transform: capitalize;
+  font-size: 10px;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  padding: 6px 16px;
+  background-color:rgba(255,0,0,0.6);
+  color: #fff;
+}
+.right_shift{
+  text-indent: -9999px;
+  position: absolute;
+  right: 60px;
+}
+.right_shift::before{
+  content: '\f105';
+  font-family: FontAwesome;
+  text-indent: 0;
+  float: right;
+  font-size: 30px;
+}
 /*=================================
   banner section styling ends here
 =================================*/
+/*=================================
+  about section styling starts here
+=================================*/ 
+.about{
+  text-align: center;
+  /* padding: 10%; */
+}
+h3{
+  font-size: 20px;
+  font-weight: bolder;
+}
+.heading{
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #7c7c7c;
+}
 
+.about ul{
+  display: flex;
+}
+
+.about li span{
+  font-weight: bolder;
+  text-transform: capitalize;
+  color:#f33838;
+}
+.about li p{
+  font-size: 10px;
+  color: #7c7c7c;
+}
+.about li a{
+  color: #6e5ee7;
+}
+
+ /*=================================
+  about section styling ends here
+=================================*/ 
 
 
 
