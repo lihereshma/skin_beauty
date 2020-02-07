@@ -542,7 +542,26 @@ footer a:hover{ color: #fff;}
 @media only screen and (max-width: 995px) {
 
   .wrapper{ width: 90%;}
+  /*==== header styling ends here ===*/ 
 
+
+
+
+
+  /*==== header styling starts here ===*/
+  /*==== banner section styling starts here ===*/
+  .banner .red_button{  width: 53%;} */
+  .banner span{ font-size: 20px;  }
+  .right_shift{ display: none;}
+
+  .banner_content ul:first-child {
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+  }
+  /*==== banner section styling starts here ===*/
   /*==== about section styling starts here ===*/ 
   .about ul{  display: block;}
   .about li{  width: 100%;}
@@ -557,6 +576,7 @@ footer a:hover{ color: #fff;}
   /*==== about section styling ends here ===*/ 
   /*==== features section styling starts here ===*/ 
   .features .wrapper{ display: block;}
+
   .features_content{
     margin: 0;
     text-align: center;
@@ -579,7 +599,7 @@ footer a:hover{ color: #fff;}
   }
   /*==== features section styling ends here ===*/ 
   /*==== users section styling starts here ===*/
-  .users .wrapper{  width: 90%; }
+  
   .users .wrapper ul{ display: block; } 
   .users_image {  width: 100%; }
   .information{ width: 100%;  }
@@ -589,10 +609,28 @@ footer a:hover{ color: #fff;}
   .users span:nth-child(4){ font-size: 20px;}
   .users p{
     padding-bottom: 5%;
-    margin: 0;
-    width: 100%;
+    margin: 0 auto;
     font-size: 20px;
     line-height: 20px;
   }
   /*==== users section styling ends here ===*/ 
+  /*==== footer styling starts here ===*/ 
+  footer .wrapper{  display: block; }
+  footer li{  display: block; }
+  footer li a{ font-size: 20px; }
+  .posts{ width: 100%;}
+  h6{ font-size: 20px;}
+  .address{ margin: 0;}
+
+  .footer_block p{
+    font-size: 20px;
+    line-height: 25px;
+   
+  }
+  
+  .footer_block,.articles,.posts{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fff;
+  }
+  /*==== footer styling ends here ===*/
 }  
