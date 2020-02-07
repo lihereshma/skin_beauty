@@ -251,6 +251,7 @@ h3{
   font-weight: bolder;
   text-transform: capitalize;
   color:#f33838;
+  display: block;
 }
 
 .about li p,.features p{
@@ -541,6 +542,17 @@ footer a:hover{ color: #fff;}
 @media only screen and (max-width: 995px) {
 
   .wrapper{ width: 90%;}
+
+  /*==== about section styling starts here ===*/ 
   .about ul{  display: block;}
   .about li{  width: 100%;}
+  .about li span{ font-size: 40px;  }
+  .about li p{  font-size: 20px;  }
+  .heading{ font-size: 20px;}
+  h3{ font-size: 30px;}
+  .about li a{
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  /*==== about section styling ends here ===*/ 
 }  
