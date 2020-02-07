@@ -26,36 +26,33 @@
             <img src="https://via.placeholder.com/130x20.png?text=Skin+Beauty" alt="Logo">
           </a>
         </h1>
-        <nav>
-          <ul>
-            <li>
-              <a href="#FIXME" title="Home">home</a>
-            </li>
-            <li>
-              <a href="#FIXME" title="About Us">about us</a>
-            </li>
-            <li>
-              <a href="#FIXME" title="Gallery">gallery</a>
-            </li>
-            <li>
-              <a href="#FIXME" title="Dropdown" class="menu">dropdown</a>
-              <ul class="menu_list">
-                <li>
-                  <a href="#FIXME" title="Link One">link one</a>
-                </li>
-                <li>
-                  <a href="#FIXME" title="Link Two">link two</a>
-                </li>
-                <li>
-                  <a href="#FIXME" title="Link Three">link three</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#FIXME" title="Contact Us">contact us</a>
-            </li>
-          </ul>
-        </nav>
+
+        <div class="menu-wrap">
+          <div class="hamburger">
+            <div class="hamburger-lines">
+              <span class="dummy">hamburger lines</span>
+              <span class="dummy">hamburger lines</span>
+              <span class="dummy">hamburger lines</span>
+            </div>
+          </div>
+          <nav>
+            <div class="nav-overlay">             
+                <ul>
+                  <li><a href="#FIXME" title="Home" class="active">home</a></li>
+                  <li><a href="#FIXME" title="About Us">about us</a></li>
+                  <li><a href="#FIXME" title="Gallery">gallery</a></li>
+                  <li class="menu"><a href="#FIXME" title="Dropdown" class="dropdown">dropdown</a>
+                    <ul class="menu_list">
+                      <li><a href="#FIXME" title="Link One">link one</a></li>
+                      <li><a href="#FIXME" title="Link Two">link two</a></li>
+                      <li><a href="#FIXME" title="Link Three">link three</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#FIXME" title="Contact Us">contact us</a></li>
+                </ul>
+            </div>
+          </nav>
+        </div> 
       </div>
     </header>
     <!--header section end-->
@@ -63,12 +60,10 @@
     <main>
       <!--banner section start-->
       <section class="banner">
+        <figure class="banner_image">            
+          <img src="https://via.placeholder.com/1286x401.png?text=Banner" alt="Banner">            
+        </figure>
         <div class="wrapper">
-          <figure class="banner_image">
-            <div class="wrapper">
-              <img src="https://via.placeholder.com/1286x401.png?text=Banner" alt="Banner">
-            </div>
-          </figure>
           <div class="banner_content">
             <ul>
               <li>
@@ -84,25 +79,29 @@
             </ul>
             <a href="#FIXME" class="right_shift">right shift</a>
           </div>
-        </div>
+        </div> 
+        <ul class="dots">
+          <li><a href="#FIXME" title="Slide One" class="dot dot_active">dot</a></li>
+          <li><a href="#FIXME" title="Slide Two" class="dot">dot</a></li>
+        </ul>
       </section>
       <!--banner section end-->
       <!--about section start-->
       <section class="about">
         <div class="wrapper">
-          <h3>Welcome to our website</h3>
+          <h3>Welcome to our Website</h3>
           <span class="heading">Experience the art of caring</span>
           <ul>
             <li>
               <img src="https://via.placeholder.com/290x128.png?text=Pedicure" alt="Block One">
               <span>pedicure &amp; beauty</span>
-              <p>Hi atwe co debit is numquam et ipsum aspernatur sint</p>
+              <p>Hi atwe co debit is numquam et ipsum aspernatur sint ipsum aspernatur</p>
               <a href="#FIXME" title="Read More" class="link">read more</a>
             </li>
             <li>
               <img src="https://via.placeholder.com/290x128.png?text=Spa" alt="Block Two">
               <span>spa &amp; massage</span>
-              <p>Hi atwe co debit is numquam et ipsum aspernatur sint</p>
+              <p>Hi atwe co debit is numquam et ipsum aspernatur sint ipsum aspernatur</p>
               <a href="#FIXME" title="Read More" class="link">read more</a>
             </li>
           </ul>
@@ -110,32 +109,32 @@
       </section>
       <!--about section end-->
       <!--features section start-->
-      <section>
+      <section class="features">
         <div class="wrapper">
           <div class="features_content">
             <h3>we are best in</h3>
             <span class="heading">Caption placed here</span>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, et labore quisquam 
-              consequatur distinctio saepe! Distinctio unde ut aliquam deserunt id. 
+              consequatur distinctio saepe.
             </p>
             <a href="#FIXME" title="Learn More" class="red_button">learn more</a>
           </div>
           <ul class="features_links">
             <li>
-              <a href="#FIXME" title="Massage">massage</a>
+              <a href="#FIXME" title="Massage" class="massage">massage</a>
               <span>massage</span>
             </li>
             <li>
-              <a href="#FIXME" title="Hair Style">hair style</a>
+              <a href="#FIXME" title="Hair Style" class="hair_style">hair style</a>
               <span>hair style</span>
             </li>
             <li>
-              <a href="#FIXME" title="Facial Style">facial style</a>
+              <a href="#FIXME" title="Facial Style" class="facial_style">facial style</a>
               <span>facial style</span>
             </li>
             <li>            
-              <a href="#FIXME" title="Eyebrows">eyebrows</a>
+              <a href="#FIXME" title="Eyebrows" class="eyebrows">eyebrows</a>
               <span>eyebrows</span>
             </li>
           </ul>
@@ -146,19 +145,19 @@
       <section class="users">
         <div class="wrapper">
           <ul>
-            <li>
+            <li class="users_image">
               <figure>
                 <img src="https://via.placeholder.com/751x251.png?text=Pedicure" alt="Users">
               </figure>
             </li>
-            <li>
+            <li class="information">
               <span>We have</span>
               <span>7630 happy users</span>
               <a href="#FIXME" title="Steve Joe">user</a>
               <span>steve joe</span>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ullam eligendi dolores sed 
-                eaque quo cumque.
+                eaque quo.
               </p>
             </li>
           </ul>
@@ -170,7 +169,7 @@
     <!--footer section start-->
     <footer>      
       <div class="wrapper">
-        <div>
+        <div class="footer_block">
           <h5>skin beauty</h5>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, placeat sit! Corporis vel non laborum corrupti. 
