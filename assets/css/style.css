@@ -555,4 +555,27 @@ footer a:hover{ color: #fff;}
     font-size: 20px;
   }
   /*==== about section styling ends here ===*/ 
+  /*==== features section styling starts here ===*/ 
+  .features .wrapper{ display: block;}
+  .features_content{
+    margin: 0;
+    text-align: center;
+    width: 100%
+  }
+  .features p{
+    font-size: 20px;
+    line-height: 150%;
+    margin: 25px 0;
+    width: 100%;
+  }
+  .red_button{
+    width: 20%;
+    font-size: 25px;
+  }
+
+  .features_links{
+    flex-wrap: nowrap;
+    margin: 5% 0;
+  }
+  /*==== features section styling ends here ===*/ 
 }  
