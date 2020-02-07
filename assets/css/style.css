@@ -106,28 +106,48 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
-.menu_list{ display: none;}
-nav li:not(:last-child){  margin-right: 30px;}
-h1,nav{ margin-top: 10px;}
+.menu_list{ display: none;  }
+nav li:not(:last-child){  margin-right: 30px; }
+h1,nav{ margin-top: 10px; }
+h1{ margin-left: 3.5%;  }
+.menu{  position: relative; }
+.menu_list li{  display: block; }
+.menu_list a{color: #000; }
 
 header .wrapper{
-  width: 93%;
+  width: 96%;
   display: flex;
   justify-content: space-between;
+  position: absolute;
 }
 
 nav li a{
+  color: #fff;
   text-transform: capitalize;
-  font-size: 10px;
-  letter-spacing: 1px;
-  /* padding: 3px 6px;
-  border: 1px solid; */
+  font-size: 9px;
+  letter-spacing: 1px; 
 }
 
-.menu::after{
-  content: '\f107';
-  font-family: FontAwesome;
+.dropdown:first-child::after{
   padding: 2px;
+  content: '\f107';
+  font-family: FontAwesome;  
+}
+
+.active{
+  padding: 16% 30%;
+  border-radius: 2px;
+  background-color: #fff;
+  color: #000; 
+}
+
+.menu_list{
+  min-width: 75px;
+  padding-left: 10%;
+  display: none;
+  background-color: #fff; 
+  z-index: 1;  
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 /*=================================
   Header styling ends here
@@ -141,42 +161,51 @@ nav li a{
 =================================*/
 .banner_content li:last-child{  display: none;  }
 
-.banner_content{
+.banner_content ul:first-child{
   display: flex;
   justify-content: space-between;
+  position: absolute;
+  top: 157px;
+  color: #fff;
 }
+
 .banner_content span{
   font-size: small;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 }
 
 h2{
+  margin: 1% 0 10%;
   text-transform: capitalize;
   font-size: 42px;
-  font-size: wei;
   font-weight: bolder;
-  letter-spacing: 1px;
+  letter-spacing: 1px; 
 }
+
 .red_button{
-  text-transform: capitalize;
-  font-size: 10px;
-  letter-spacing: 1px;
-  border-radius: 2px;
   padding: 6px 16px;
+  border-radius: 2px;
   background-color:rgba(255,0,0,0.6);
   color: #fff;
+  text-transform: capitalize;
+  font-size: 10px;
+  letter-spacing: 1px;  
 }
+
 .right_shift{
-  text-indent: -9999px;
   position: absolute;
   right: 60px;
+  top: 180px;
+  text-indent: -9999px;  
+  color: #fff;
 }
+
 .right_shift::before{
   content: '\f105';
   font-family: FontAwesome;
   text-indent: 0;
   float: right;
-  font-size: 30px;
+  font-size: 25px;
 }
 /*=================================
   banner section styling ends here
@@ -187,9 +216,9 @@ h2{
 .about li img{  margin-bottom: 10px;  }
 
 .about{
-  text-align: center;
   padding: 3.5% 0;
   background-color: #d0dcbd;
+  text-align: center;  
 }
 
 h3{
@@ -208,12 +237,13 @@ h3{
   justify-content: space-between;
 }
 
-.about li{
-  background-color: #fff;
-  width: 48%;
+.about li{  
   box-sizing: border-box;
+  width: 48%; 
   padding: 3%;
   margin-top: 6%;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .about li span{
@@ -223,18 +253,18 @@ h3{
 }
 
 .about li p,.features p{
-  font-size: 10px;
-  color: #7c7c7c;
   margin-top: 10px;
   line-height: 16px;
+  font-size: 10px;
+  color: #7c7c7c;  
 }
 
 .about li a{
+  margin-top: 10px;
   color: #6e5ee7;
   text-transform: capitalize;
   font-size: 9px;
-  letter-spacing: 1px;
-  margin-top: 10px;
+  letter-spacing: 1px;  
 }
 
 .about li a::before{
@@ -248,26 +278,26 @@ h3{
 /*=================================
   features section styling starts here
 =================================*/ 
-.features .wrapper{
-  display: flex;
-  padding-bottom: 2%;
-}
+.features .wrapper{ display: flex; }
+.features h3{ text-transform: capitalize;  }
+.features_links li a{ font-size: 30px;  }
+.massage,.hair_style,.facial_style,.eyebrows{  text-indent: -9999px;  }
+.features_links li{ margin-bottom: 15px; }
+
 .features_content{
-  padding-top: 2%;
-  margin-left: 17%;
   width: 56%;
+  padding-top: 2%;
+  margin-left: 17%;  
   letter-spacing: 1px;
 }
-.features h3{
-  text-transform: capitalize;
-}
+
 
 .features p{
-  font-size: 10px;
-  color: #7c7c7c;
-  margin: 15px 0;
-  line-height: 16px;
   width: 89%;
+  margin: 15px 0;
+  font-size: 10px;
+  color: #7c7c7c; 
+  line-height: 16px;  
 }
 
 .features_links{
@@ -282,28 +312,16 @@ h3{
   text-align: center;
   width: 37%;
 }
-.features_links li a{
-  font-size: 30px;
-}
-
-.features_links li:first-child,
-.features_links li:nth-child(2){
-  margin-bottom: 15px;
-}
 
 .features_links span{
-  text-transform: capitalize;
+  margin-top: 5px; 
   display: block;
+  text-transform: capitalize;
   font-weight: bolder;
   font-size: 12px;
   letter-spacing: 1px;
-  margin-top: 5px;
 }
 
-.massage,.hair_style,
-.facial_style,.eyebrows{
-  text-indent: -9999px;
-}
 .massage::before{
   content: '\f118';
   font-family: FontAwesome;
@@ -311,6 +329,7 @@ h3{
   float: right;
   color: #6e5ee7;
 }
+
 .hair_style::before{
   content: '\f182';
   font-family: FontAwesome;
@@ -318,6 +337,7 @@ h3{
   float: right;
   color: #6e5ee7;
 }
+
 .facial_style::before{
   content: '\f004';
   font-family: FontAwesome;
@@ -325,6 +345,7 @@ h3{
   float: right;
   color: #6e5ee7;
 }
+
 .eyebrows::before{
   content: '\f06e';
   font-family: FontAwesome;
@@ -338,54 +359,61 @@ h3{
 /*=================================
   users section styling starts here
 =================================*/ 
-.users .wrapper{  width: 100%;}
+.users .wrapper{  width: 100%;  }
 .users .wrapper ul{ display: flex;  }
-.users span{ display: block;}
+.users span{ display: block;  }
+
 .users ul li:last-child{
   box-sizing: border-box;
-  background-color: #f34142;
-  text-align: center;
   padding: 31px 0px;
+  background-color: #f34142;
+  text-align: center;  
   color: #fff;
 }
+
 .users span:first-child{
   color: #1f1f1f;
   font-size: 13px;
   font-weight: bold;
 }
+
 .users span:nth-child(2){
+  margin-top: 10px;
   font-weight: bolder;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-top: 10px;
+  letter-spacing: 1px; 
 }
+
 .users a{
   text-indent: -9999px;
   display: inline-block;
 }
+
 .users a::before{
+  padding: 7px 10px;
+  border-radius: 100%;
+  margin-top: 20px;
   content: '\f007';
   font-family: FontAwesome;
   text-indent: 0;
   float: right;
-  color: #000;
-  padding: 7px 10px;
   background-color: #fff;
-  border-radius: 100%;
-  margin-top: 20px;
+  color: #000;  
 }
+
 .users span:nth-child(4){
+  margin: 10px 0;
   text-transform: capitalize;
   font-weight: bolder;
-  font-size: 14px;
-  margin: 10px 0;
+  font-size: 14px;  
 }
+
 .users p{
+  margin-left: 26%;
+  width: 55%;
   font-size: 10px;
   letter-spacing: 1px;
-  line-height: 16px;
-  width: 55%;
-  margin-left: 26%;
+  line-height: 16px;  
 }
  /*=================================
   users section styling ends here
@@ -397,10 +425,15 @@ h3{
 /*=================================
   footer styling starts here
 =================================*/ 
+.posts{ width: 60%; }
+.posts li{  margin-bottom:2px;  }
+.address{ margin-left: 2%;  }
+
 footer{
   background-color: #1f1f1f;
   color: #fff;
 }
+
 footer .wrapper{
   display: flex;
   padding: 3% 0;
@@ -411,6 +444,7 @@ h5{
   font-weight: bold;
   font-size: 22px;
 }
+
 h6{
   text-transform: capitalize;
   font-size: 13px;
@@ -442,44 +476,50 @@ a,.footer_block p{
   justify-content: space-between;
 }
 
-.posts{ width: 60%; }
-
-.posts li:first-child,.posts li:nth-child(2),
-.posts li:nth-child(3){
-  margin-bottom:2px;
-}
-
-.address{
-  margin-left: 2%;
-}
-
 .location::before{
+  margin-right: 10px;
   content: '\f041';
-  font-family: FontAwesome;
-  margin-right: 10px;
+  font-family: FontAwesome;  
   font-size: 10px;
   color: #fff;
 }
+
 .email::before{
-  content: '\f0e0';
-  font-family: FontAwesome;
   margin-right: 10px;
+  content: '\f0e0';
+  font-family: FontAwesome;  
   font-size: 10px;
   color: #fff;
 }
+
 .number::before{
-  content: '\f879';
-  font-family: FontAwesome;
   margin-right: 5px;
+  content: '\f095';
+  font-family: FontAwesome; 
   font-size: 10px;
   color: #fff;
 }
 .time::before{
-  content: '\f017';
-  font-family: FontAwesome;
   margin-right: 10px;
+  content: '\f017';
+  font-family: FontAwesome;  
   font-size: 10px;
   color: #fff;
+}
+
+nav li a:hover{ color: #f34142; }
+.red_button:hover{ background-color: #f33838; }
+.right_shift:hover{ color: #f34142; }
+.about li a:hover{  color: #422af5; }
+footer a:hover{ color: #fff;}
+.menu:hover .menu_list{
+  display: block;
+  position: absolute;
+}
+.features_links li:hover{
+  background-color: #cecbcb;
+  color: #f34142;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
  /*=================================
   footer styling ends here
