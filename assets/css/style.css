@@ -106,20 +106,24 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
-.menu_list{ display: none;  }
-nav li:not(:last-child){  margin-right: 30px; }
+nav li:not(:last-child){ margin-right: 28px; }
 h1,nav{ margin-top: 10px; }
-h1{ margin-left: 3.5%;  }
-.menu{  position: relative; }
-.menu_list li{  display: block; }
-.menu_list a{color: #000; }
-.hamburger{display: none;}
+.menu_list{ display: none; }
+.menu{ position: relative; }
+.menu_list li{ display: block; }
+.menu_list a{ color: #000; }
+.hamburger{ display: none; }
+
+header{
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
 
 header .wrapper{
-  width: 96%;
+  width: 93%;
   display: flex;
   justify-content: space-between;
-  position: absolute;
 }
 
 nav li a{
@@ -129,11 +133,6 @@ nav li a{
   letter-spacing: 1px; 
 }
 
-.dropdown:first-child::after{
-  padding: 2px;
-  content: '\f107';
-  font-family: FontAwesome;  
-}
 
 .active{
   padding: 16% 30%;
@@ -160,15 +159,15 @@ nav li a{
 /*=================================
   banner section styling starts here
 =================================*/
-.banner_content li:last-child{  display: none;  }
-.dots{display: none;}
+.banner{position: relative;}
+.banner_content li:last-child{ display: none; }
+.dots{ display: none; }
 
-.banner_content ul:first-child{
-  display: flex;
-  justify-content: space-between;
+.banner .wrapper{
   position: absolute;
-  top: 157px;
-  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
 }
 
 .banner_content span{
@@ -195,11 +194,12 @@ h2{
 }
 
 .right_shift{
-  position: absolute;
-  right: 60px;
-  top: 180px;
   text-indent: -9999px;  
   color: #fff;
+  position: absolute;
+    bottom: 0;
+    right: 58px;
+    top: 42%;
 }
 
 .right_shift::before{
@@ -227,6 +227,7 @@ h3{
   font-size: 22px;
   font-weight: bolder;
   color: #353a40;
+  font-weight: 1000;
 }
 
 .heading{
@@ -242,7 +243,7 @@ h3{
 
 .about li{  
   box-sizing: border-box;
-  width: 48%; 
+  width: 48.5%; 
   padding: 3%;
   margin-top: 6%;
   background-color: #fff;
@@ -259,7 +260,7 @@ h3{
 .about li p,.features p{
   margin-top: 10px;
   line-height: 16px;
-  font-size: 10px;
+  font-size: 9px;
   color: #7c7c7c;  
 }
 
@@ -295,11 +296,10 @@ h3{
   letter-spacing: 1px;
 }
 
-
 .features p{
   width: 89%;
   margin: 15px 0;
-  font-size: 10px;
+  font-size: 9px;
   color: #7c7c7c; 
   line-height: 16px;  
 }
@@ -363,13 +363,17 @@ h3{
 /*=================================
   users section styling starts here
 =================================*/ 
-.users .wrapper{  width: 100%;  }
-.users .wrapper ul{ display: flex;  }
 .users span{ display: block;  }
-.users_image{ width: 64%; }
-.information{ width: 46%; }
+.users_image{ width: 58.5%; }
+.users .wrapper{  width: 100%;  }
+.users .wrapper ul{ 
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .information{
   box-sizing: border-box;
+  width: 41.5%;
   background-color: #f34142;
   text-align: center;  
   color: #fff;
@@ -383,7 +387,7 @@ h3{
 }
 
 .information span:nth-child(2){
-  margin-top: 10px;
+  margin-top: 9px;
   font-weight: bolder;
   text-transform: uppercase;
   letter-spacing: 1px; 
@@ -416,7 +420,7 @@ h3{
 .users p{
   margin-left: 26%;
   width: 55%;
-  font-size: 10px;
+  font-size: 9px;
   letter-spacing: 1px;
   line-height: 16px;  
 }
@@ -430,12 +434,14 @@ h3{
 /*=================================
   footer styling starts here
 =================================*/ 
-.posts{ width: 62%; }
+.posts{ width: 55%; }
+.address{ margin-left: 2%; }
+
 .posts li{  
-  margin-right: 2px;
-  margin-bottom:2px;  
+  margin-bottom:3px; 
+  width: 30%; 
+  margin-right: 3px;
 }
-.address{ margin-left: 2%;  }
 
 footer{
   background-color: #1f1f1f;
@@ -461,10 +467,11 @@ h6{
   margin-bottom: 22px;
 }
 
-a,.footer_block p{
+a,.footer_block p,.time{
   color: #7c7c7c;
-  font-size: 10px;
+  font-size: 9px;
 }
+
 .footer_block p{
   line-height: 18px;
   margin-top: 13px;
@@ -481,7 +488,6 @@ a,.footer_block p{
 .posts ul{
   display: flex;
   flex-wrap: wrap;
-  width: 102%;
 }
 
 .location::before{
@@ -507,6 +513,7 @@ a,.footer_block p{
   font-size: 10px;
   color: #fff;
 }
+
 .time::before{
   margin-right: 10px;
   content: '\f017';
@@ -515,25 +522,27 @@ a,.footer_block p{
   color: #fff;
 }
 
-
-
-
-nav li a:hover{ color: #f34142; }
-.red_button:hover{ 
-  background-color: #f33838;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
-}
-.right_shift:hover{ color: #f34142; }
-.about li a:hover{  color: #422af5; }
-footer a:hover{ color: #fff;}
 .menu:hover .menu_list{
   display: block;
   position: absolute;
 }
-.features_links li:hover{
-  background-color: #cecbcb;
-  color: #f34142;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+@media only screen and (min-width: 1024px) {
+  .right_shift:hover{ color: #f34142; }
+  .about li a:hover{ color: #422af5; }
+  footer a:hover{ color: #fff;}
+  nav li a:hover{ color: #f33838; }
+
+  .red_button:hover{ 
+    background-color: #f33838;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+  }
+
+  .features_links li:hover{
+    background-color: #cecbcb;
+    color: #f34142;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
 }
  /*=================================
   footer styling ends here
@@ -545,23 +554,18 @@ footer a:hover{ color: #fff;}
 
   .wrapper{ width: 90%;}
   /*==== header styling ends here ===*/ 
-  .hamburger{margin-top: 10px;}
   nav li{ display: block; }
-  .menu_list{ min-width: 80px;  }
-  .menu_wrap:hover nav{ display: block; }
+  .menu_list{ min-width: 80px; }
+  nav li a:hover{ color: #f34142;}
 
+  .hamburger{ 
+    margin-top: 5px;
+    display: block; 
+  }
+  
   nav li a{ 
     color: #fff;
     font-size: 10px;  
-  }
-
-  .hamburger::before{
-    content: '\f0c9';
-    font-family: FontAwesome;
-    text-indent: 0;
-    float: right;
-    font-size: 30px;
-    color: #000;
   }
   
   .active{
@@ -571,7 +575,7 @@ footer a:hover{ color: #fff;}
   }
   
   nav{
-    min-width: 75px;
+    min-width: 100%;
     padding-left: 10%;
     background-color: #000;
     color: #fff;
@@ -579,26 +583,44 @@ footer a:hover{ color: #fff;}
     z-index: 1;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   }
-  /*==== header styling starts here ===*/
-  /*==== banner section styling starts here ===*/
-  .banner .red_button{  width: 53%;} */
-  .banner span{ font-size: 20px;  }
-  .right_shift{ display: none;}
-  .dot_active{  color: #f34142;}
-  .banner_content ul:first-child {
+
+  .line{
     display: block;
-    text-align: center;
-    position: absolute;
-    top: 10%;
-    left: 35%;
+    text-indent: -9999px;
+    height: 10px;
   }
 
+  .line::before{
+    content: '';
+    font-family: FontAwesome;
+    text-indent: 0;
+    width: 30px;
+    height: 5px;
+    float: right;
+    background-color: #000;
+  }
+
+  .menu_wrap:hover nav{
+    display: block;
+    animation-name: arrow;
+    animation-duration: 0.5s;
+    width: 100%;
+  }
+  /*==== header styling starts here ===*/
+
+  /*==== banner section styling starts here ===*/
+  .banner .red_button{ width: 53%; }
+  .banner span{ font-size: 20px; }
+  .right_shift{ display: none; }
+  .dot_active{ color: #f34142; }
+  
+  .banner_content{text-align: center;}
   .dots{
     display: block;
     text-align: center;
   }
 
-  .dot,.hamburger{
+  .dot{
     display: inline-block;
     text-indent: -9999px;
   }
@@ -611,33 +633,37 @@ footer a:hover{ color: #fff;}
     font-size: 10px;
     color: #c7c2c2;
   }
-  /*==== banner section styling starts here ===*/
+  /*==== banner section styling ends here ===*/
   /*==== about section styling starts here ===*/ 
-  .about ul{  display: block;}
-  .about li{  width: 100%;}
-  .about li span{ font-size: 40px;  }
-  .about li p{  font-size: 20px;  }
-  .heading{ font-size: 20px;}
-  h3{ font-size: 30px;}
+  .about ul{ display: block;}
+  .about li{ width: 100%;}
+  .about li span{ font-size: 40px; }
+  .about li p{ font-size: 20px; }
+  .heading{ font-size: 20px; }
+  h3{ font-size: 30px; }
+
   .about li a{
     margin-top: 20px;
     font-size: 20px;
   }
   /*==== about section styling ends here ===*/ 
   /*==== features section styling starts here ===*/ 
-  .features .wrapper{ display: block;}
+  .features .wrapper{ display: block; }
+  .features .red_button{ width: 40%; }
 
   .features_content{
     margin: 0;
     text-align: center;
     width: 100%
   }
+
   .features p{
     font-size: 20px;
     line-height: 150%;
     margin: 25px 0;
     width: 100%;
   }
+
   .red_button{
     width: 21%;
     font-size: 25px;
@@ -647,17 +673,18 @@ footer a:hover{ color: #fff;}
     flex-wrap: nowrap;
     margin: 5% 0;
   }
-  .features .red_button{  width: 40%;}
+
   /*==== features section styling ends here ===*/ 
   /*==== users section styling starts here ===*/
   
   .users .wrapper ul{ display: block; } 
-  .users_image {  width: 100%; }
-  .information{ width: 100%;  }
+  .users_image { width: 100%; }
+  .information{ width: 100%; }
   .information span:first-child { font-size: 20px };
   .information span:nth-child(2) { font-size: 25px };
-  .information a {  font-size: 25px;  }
-  .users span:nth-child(4){ font-size: 20px;}
+  .information a { font-size: 25px; }
+  .users span:nth-child(4){ font-size: 20px; }
+
   .users p{
     padding-bottom: 5%;
     margin: 0 auto;
@@ -666,12 +693,13 @@ footer a:hover{ color: #fff;}
   }
   /*==== users section styling ends here ===*/ 
   /*==== footer styling starts here ===*/ 
-  footer .wrapper{  display: block; }
-  footer li{  display: block; }
-  footer li a{ font-size: 20px; }
-  .posts{ width: 100%;}
-  h6{ font-size: 20px;}
-  .address{ margin: 0;}
+  footer .wrapper{ display: block; }
+  footer li{ display: block; }
+  footer li a,.time{ font-size: 20px; }
+  .posts{ width: 100%; }
+  .posts li{ width: 16%; }
+  h6{ font-size: 20px; }
+  .address{ margin: 0; }
 
   .footer_block p{
     font-size: 20px;
